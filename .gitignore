@@ -1,0 +1,57 @@
+# OCAI Booklet — Spring 2026 Edition
+# Files that should NOT be committed to GitHub.
+
+# --- Jupyter / Python -----------------------------------------------------
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.python-version
+
+# --- OS / editor cruft ----------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+.idea/
+.vscode/
+
+# --- Booklet runtime artefacts (regenerated when notebooks run) ----------
+# Section 2 pipeline outputs — rebuilt by 01_feature_pipeline.ipynb / 02_training_pipeline.ipynb
+prepared_heart_failure.joblib
+best_heart_failure_model.joblib
+
+# Challenge 1 — FAISS index over MedRAG/textbooks (~190 MB; rebuilt on first run)
+medrag_textbooks_faiss/
+
+# Challenge 1 — fine-tuning training data (small, but regenerated)
+finals_training.jsonl
+
+# Challenge 2 — TTS audio outputs
+*.mp3
+
+# Challenge 4 — Hugging Face dataset cache (large)
+.cache/
+huggingface/
+
+# Challenge 5 — reader-downloaded wear data (proposal §3 reader-fetches-themselves)
+wear_001.cwa
+wear_001.csv
+*.cwa.gz
+
+# --- Secrets — NEVER commit ----------------------------------------------
+.env
+.env.local
+*.key
+*.pem
+secrets/
+
+# --- Image attachments accidentally embedded in notebooks ----------------
+# (See Phase 7 QA — Jupyter occasionally embeds dragged-in images as
+# multi-MB base64 attachments. The booklet's images live in
+# Image\ assetss\ for\ OCAIH\ booklet\ 2026/ and are referenced by relative
+# path. If you find a notebook bloating in size after editing, search for
+# "attachments": and remove that key from the JSON.)
