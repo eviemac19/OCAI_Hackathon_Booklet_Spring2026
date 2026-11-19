@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use or quote this booklet, please cite it as below."
+title: "Oxford Clinical AI Hackathon Booklet, Spring 2026 Edition"
+type: software
+authors:
+  - name: "Clinical AI Partners Oxford"
+    email: "events@clinicalaipartners.org"
+version: "1.0.1"
+date-released: "2026-11-19"
+url: "https://github.com/eviemac19/OCAI_Hackathon_Booklet_Spring2026"
+repository-code: "https://github.com/eviemac19/OCAI_Hackathon_Booklet_Spring2026"
+license-url: "https://github.com/eviemac19/OCAI_Hackathon_Booklet_Spring2026/blob/main/LICENSE.md"
+abstract: "Jupyter notebooks from the Oxford Clinical AI Hackathon, Spring 2026. Code is released under the MIT Licence. Teaching text is copyright Clinical AI Partners Ltd, all rights reserved; see LICENSE.md."

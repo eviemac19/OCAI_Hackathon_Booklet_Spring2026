@@ -1,40 +1,37 @@
 # Oxford Clinical AI Hackathon 2026 — Booklet
 
-## Spring 2026 Edition
+## Spring 2026 Edition · public selection
 
-A self-contained set of Jupyter notebooks that walks you through building a clinical AI minimum viable application — from a customised ChatGPT to a fine-tuned small model — without needing prior coding experience and without leaving the OpenAI and HuggingFace open ecosystems.
+Jupyter notebooks from the Oxford Clinical AI Hackathon that walk you through building and explaining a clinical AI model, from raw data to a governed, demo-ready tool. No prior coding experience is needed.
 
 ---
 
 ## Welcome
 
-This booklet is the post-event compendium of the Oxford Clinical AI Hackathon, held 6–8 April 2026 at the Cheng Kar Shun Digital Hub, Jesus College and the John Radcliffe Hospital, Oxford. Across three days, ten teams of clinicians, researchers, and data scientists built working clinical AI applications and presented them to a panel of judges. 
+This booklet is the after-event compendium of the Oxford Clinical AI Hackathon, held 6–8 April 2026 at the Cheng Kar Shun Digital Hub, Jesus College and the John Radcliffe Hospital, Oxford. Across three days, ten teams of clinicians, researchers, and data scientists built working clinical AI applications and presented them to a panel of judges. Every team delivered a live demo. The post-event survey returned an overall rating of 4.49 out of 5 and a Net Promoter Score of +63.
 
-The event thesis was simple: Can you build an AI tool match FY1 competency? Each team dealth with different aspects of FY1 competency e.g. pass a final exam, read a CXR, write a discharge summary, etc. 
-https://oerc.ox.ac.uk/ai-centre/ai-centre-events/oxford-clinical-ai-hackathon 
-Academic sponsor: Oxford University AI Competency Centre
-Technical Sponsor: OpenAI
-Outputs: 
-- Every team delivered a live demo, 80% of participants left with a working prototype
-- Learning uplift was 3.59 to 7.17 confidence, Net Promoter Score of 76. 
-- Learning archetypes transitioned from from AI learner to builder to governor.
-  
-## Who this booklet is for
+The notebooks here are the lectures, notebooks, and mentor notes from that event, re-edited so you can work through them at your own pace.
 
-- **Clinicians** who want to understand clinical AI well enough to evaluate it, build small tools for their own workflow, and contribute meaningfully to governance discussions.
-- **Researchers and data scientists** who want to understand clinical reasoning well enough to build AI tools that clinicians will actually trust.
-- **NHS and healthcare admin staff** whose frontline perspective makes them, in our experience, some of the most insightful contributors to clinical AI design.
-- **Medical students and early-career clinicians** who want a hands-on grounding in clinical AI before it lands in their daily practice.
+If you were at the event: this is the same material, with the lessons we learned along the way folded in and the rough edges smoothed. If you weren't: welcome — you are in good company. Most of our live-event participants started with no coding experience. The booklet is built for that.
 
-## What you'll be able to do by the end
+## Impact — Spring 2026
 
-- No-code: Customise ChatGPT and build Custom GPTs for clinical workflows, use Retrieval-Augmented Generation to ground AI outputs in trusted clinical references.
-- Low-code: Train, validate, and explain a clinical machine learning model — including catching the kinds of data leakage that produce impressive metrics and dangerous tools.
-- Code tasks: Fine-tune an small language model and integrate text-to-speech for a clinical voice loop.
-- Governance: Recognise the difference between technical accuracy and clinical safety.  Write a model card, an acceptable-use statement, and a monitoring plan that would stand up to NHS AI / MHRA Software as a Medical Device scrutiny
-  
+![Oxford Clinical AI Hackathon Spring 2026 — impact in one page](assets/impact_one_page_spring2026.png)
 
-## How the booklet is organised — full table of contents
+- **66** clinicians, researchers and scientists from four continents, in ten teams
+- **80%** of survey respondents reported a fully functional prototype by Demo Day
+- Self-rated ability to build a clinical AI pipeline rose from **3.59 to 7.17** out of 10
+- Overall rating **4.49 / 5**; Net Promoter Score **+63**
+
+*Source: post-event survey, completed by 41 of the 66 attendees.*
+
+The event sat at the interface between a frontier AI lab and clinicians who were new to building with AI. The lab brought the tools; the cohort brought the clinical problems; our curriculum did the translating.
+
+Event page at the Oxford University AI Competency Centre: [oerc.ox.ac.uk/ai-centre/ai-centre-events/oxford-clinical-ai-hackathon](https://oerc.ox.ac.uk/ai-centre/ai-centre-events/oxford-clinical-ai-hackathon)
+
+## What is in this repository
+
+This repository is a public selection from the full booklet. It contains the setup chapter, the complete pipelines section, one of the five challenges, and the reference appendix.
 
 ### `00_setup/` — Environment and tools (one-time, ~30–60 minutes)
 
@@ -42,25 +39,8 @@ Outputs:
 | --- | --- | --- |
 | `README.md` | Setup chapter — API key, three environment options (Colab, local, Codespaces), troubleshooting | 30–60 min |
 | `00_hello_world_test.ipynb` | Five-step environment check that confirms everything is wired up | 5 min |
-| `requirements.txt` | Pinned Python dependencies for the whole booklet | (reference) |
+| `requirements.txt` | Pinned Python dependencies | (reference) |
 | `hello_world_test_outline.md` | Cell-by-cell plan for the test notebook (for re-builders) | (reference) |
-
-### `01_foundations/` — Section 1: Foundations of AI (~5–6 hours)
-
-The conceptual half of the booklet. No coding required to read it; small code cells are skippable.
-
-| Notebook | What it covers | Time |
-| --- | --- | --- |
-| `01_introduction.ipynb` | Orientation,  3 rules to remember | 20 min |
-| `02_what_is_ai.ipynb` | AI / ML / DL distinctions, neural networks, training, overfitting, evaluation | 40 min |
-| `03_clinical_nlp.ipynb` | Language as a clinical signal — tokenisation, NER, summarisation, coding | 40 min |
-| `03_clinical_nlp_demo_discharge_coding.ipynb` | Standalone — worked end-to-end discharge-coding pipeline (read-through) | 20 min |
-| `04_clinical_imaging.ipynb` | How computers see images — CNNs, transfer learning, Grad-CAM | 35 min |
-| `04_clinical_imaging_demo_radiology.ipynb` | Standalone — Stanford CXR deployment story, model card, MHRA pathway | 20 min |
-| `05_llms_and_prompting.ipynb` | Pattern completion at scale, hallucination, prompt engineering, Custom GPTs, function calling | 45 min |
-| `06_data_analytics.ipynb` | Features, splits, AUC, sensitivity, calibration, the data-leakage instinct | 40 min |
-| `07_grounding_and_customisation.ipynb` | When prompting isn't enough — RAG, fine-tuning, the prompt → RAG → fine-tune decision tree | 40 min |
-| `08_safety_governance_evaluation.ipynb` | Bias, accountability, model cards, EHIA, MHRA SaMD, governance as design | 40 min |
 
 ### `02_pipelines/` — Section 2: Foundations of AI Pipelines (~2–3 hours)
 
@@ -72,32 +52,13 @@ Concepts become code. Three modular pipeline notebooks using the heart-failure d
 | `02_training_pipeline.ipynb` | Train four model families (LogReg, RF, GBoost, SVM); compare; threshold tuning; final test | 50 min |
 | `03_inference_pipeline.ipynb` | SHAP + LIME triangulation, dynamic ipywidgets, GPT-grounded narrative, clinical guardrails | 60 min |
 
-### `03_challenges/` — Section 3: Five clinical AI MVP challenges (~8–10 hours)
+### `03_challenges/` — Section 3: Challenge 4, Imaging
 
-Each challenge is self-contained — clinical brief, dataset, 8–10 numbered Steps, demo-day rubric, model card, mentor's notes. Pick any order; *Challenge 3 is the densest if you only do one*.
-## Recommended order
+A self-contained challenge — clinical brief, dataset, numbered Steps, demo-day rubric, model card, mentor's notes.
 
-1. **`00_setup/` first.** Non-negotiable. All the notebooks depends on a working environment, and this is really worth dwelling over. 
-2. **Section 1 — Foundations** 
-3. **Section 2 — Pipelines.** This is where concepts become code. 
-4. **Section 3 — Challenges**, in any order. They are independent.
-5. **Glossary as a reference**
-   
 | Folder / notebook | Clinical question | Time |
 | --- | --- | --- |
-| `challenge_1_final_exam/challenge_1_final_exam.ipynb` | Can your AI pass an FY1 specimen exam? RAG over MedRAG + optional fine-tuning + LIME + guardrails | 90–120 min |
-| `challenge_2_communication_ethics_empathy/challenge_2_communication_ethics_empathy.ipynb` | Can your AI scaffold a difficult clinical conversation safely? Five-framework dispatch + TTS bonus | 90–120 min |
-| `challenge_3_data_analytics/challenge_3_data_analytics.ipynb` | Can your AI predict heart-failure mortality and explain why? *Includes the central data-leakage discovery* | 90–120 min |
-| `challenge_4_imaging_pneumonia/challenge_4_imaging_pneumonia.ipynb` | Pneumonia yes/no on chest X-ray, and recognise when the input isn't a chest X-ray at all (OOD) | 90–150 min |
-| `challenge_5_wearables/challenge_5_wearables.ipynb` | Wear → FHIR Observation → clinical snapshot for Mr David Chen's cardiologist | 120–180 min |
-
-### Front-matter
-
-| File | What it is |
-| --- | --- |
-| `README.md` | This page |
-| `requirements.txt` | Top-level mirror of `00_setup/requirements.txt` |
-| `Image assetss for OCAIH booklet 2026/` | Diagrams referenced from the foundations chapters |
+| `challenge_4_imaging_pneumonia/challenge_4_imaging_pneumonia.ipynb` | Pneumonia yes/no on chest X-ray, and recognise when the input isn't a chest X-ray at all (out-of-distribution detection) | 90–150 min |
 
 ### `appendix/` — Reference material
 
@@ -105,55 +66,93 @@ Each challenge is self-contained — clinical brief, dataset, 8–10 numbered St
 | --- | --- |
 | `appendix/README.md` | Index to the appendix files |
 | `appendix/glossary.ipynb` | Clinical-AI glossary — look up terms as they come up |
-| `appendix/tech_stack.md` | Every Python library the booklet uses, with pinned versions, links to docs, and which chapter introduces each |
-| `appendix/further_reading.md` | Consolidated citations from across the booklet — datasets, methodological papers, governance frameworks, clinical guidelines |
+| `appendix/tech_stack.md` | The Python libraries the booklet uses, with pinned versions and links to docs |
+| `appendix/further_reading.md` | Consolidated citations — datasets, methodological papers, governance frameworks, clinical guidelines |
 | `appendix/sponsors_and_credits.md` | Sponsors, venue, mentors, post-event survey contributors |
-| `appendix/changelog.md` | Version history, starting at v1.0 |
+| `appendix/changelog.md` | Version history |
 
-## The five challenges
+`LICENSE.md` and `CITATION.cff` at the top level set out the reuse terms and how to cite the booklet.
 
-| Challenge | Clinical question |
-| --- | --- |
-| 1 — Final Exam | Can your AI pass a Foundation Year 1 specimen exam? |
-| 2 — Communication, Ethics & Empathy | Can your AI summarise a complex case in SBAR and speak it aloud, safely? |
-| 3 — Data Analytics | Can your AI predict heart failure mortality and explain why? |
-| 4 — Imaging | Can your AI tell pneumonia from a normal chest X-ray, and tell you when the input isn't a chest X-ray at all? |
-| 5 — Wearables | Can your AI ingest sensor data, convert it to FHIR, and write a clinical snapshot? |
+### The full booklet
+
+The full booklet also has a conceptual section (Section 1 — Foundations of AI) and four more challenges: Final Exam, Communication Ethics & Empathy, Data Analytics, and Wearables. They are used in our live programmes and are not part of this public selection.
+
+You will see cross-references to them in the notebooks here, for example *Chapter 06* or *Challenge 3*. The notebooks in this repository do not load any files from them. If you would like to know more about the full curriculum, write to us at the address below.
+
+## Who this booklet is for
+
+- **Clinicians** who want to understand clinical AI well enough to evaluate it, build small tools for their own workflow, and contribute meaningfully to governance discussions.
+- **Researchers and data scientists** who want to understand clinical reasoning well enough to build AI tools that clinicians will actually trust.
+- **NHS and healthcare admin staff** whose frontline perspective makes them, in our experience, some of the most insightful contributors to clinical AI design.
+- **Medical students and early-career clinicians** who want a hands-on grounding in clinical AI before it lands in their daily practice.
+
+The most useful learning happens when these groups work together. If you can find a study partner from a different background, do.
+
+## What you'll be able to do by the end
+
+- Prepare a clinical dataset for modelling — including catching the kind of data leakage that produces impressive metrics and dangerous tools.
+- Train, validate, and compare several model families, and choose a decision threshold as a clinical decision rather than a default.
+- Explain an individual prediction with SHAP and LIME, and generate a clinical narrative that is grounded in the model output and held by guardrails.
+- Fine-tune an image classifier on chest X-rays, and detect when an input is not a chest X-ray at all.
+- Write a model card, an acceptable-use statement, and a monitoring plan.
+- Recognise the difference between technical accuracy and clinical safety, and tell which one a vendor is actually showing you.
+
+## Recommended order
+
+1. **`00_setup/` first.** Non-negotiable. Everything later depends on a working environment.
+2. **`02_pipelines/` next, in order.** Each notebook saves what the next one loads. Take your time on the feature pipeline notebook in particular — the data leakage example is the single most important lesson in the booklet.
+3. **Challenge 4** once the pipelines make sense. It re-points the same pipeline at an imaging problem.
+4. **Glossary as a reference**, not a chapter. Open it when you hit a term you don't know.
 
 ## Time guidance
 
 | Section | Time for self-study | Notes |
 | --- | --- | --- |
 | `00_setup/` | 30–60 minutes | One-time. Do this once and forget it. |
-| Section 1 | 2–3 hours | Splits cleanly into 30–45 minute lectures. |
-| Section 2 | 2–3 hours | Best done in one or two focused sittings. |
-| Section 3 | 1.5–2 hours per challenge (≈ 8–10 hours total) | Each challenge stands alone. |
-| **Total** | **≈ 12–17 hours** | A long weekend, or two evenings a week for two to three weeks. |
+| Section 2 — Pipelines | 2–3 hours | Best done in one or two focused sittings. |
+| Challenge 4 — Imaging | 1.5–2.5 hours | Depends on download speed and whether you have a GPU. |
+| **Total** | **≈ 4–6 hours** | |
 
 These are estimates from the live event, scaled for self-study. Add roughly 30% if you are completely new to Python.
 
 ## What you'll need
 
 - A laptop with a stable internet connection.
-- An OpenAI API key. Indicative budget: **$5–10** to complete all five challenges using GPT-4o-mini and TTS-1. Set up in `00_setup/`.
+- An OpenAI API key for the environment check and the narrative steps. The notebooks here use GPT-4o-mini and cost very little to run; `00_setup/` walks you through setting a hard spending limit before you generate a key.
 - A free HuggingFace account for the open datasets and models.
 - Either Google Colab (free, recommended if you are new to Python), local JupyterLab, or GitHub Codespaces. Setup steps for all three are in `00_setup/`.
 
 ## Three rules to keep yourself and your patients safe
 
 1. **Do not paste identifiable patient data into any hosted API.** This booklet uses public, de-identified, research-grade datasets exclusively. When you take what you've learned back into your own workflow, build with synthetic or de-identified data first.
-2. **Treat any headline metric above 0.95 as a question, not an answer.** You'll meet this lesson properly in Section 2 and again in Challenge 3. The instinct to challenge a too-good-to-be-true result is the most valuable skill in this booklet.
-3. **Governance is a design choice, not a compliance afterthought.** Every challenge ends with a governance section. Treat it as part of the build, not paperwork.
+2. **Treat any headline metric above 0.95 as a question, not an answer.** You'll meet this lesson properly in Section 2. The instinct to challenge a too-good-to-be-true result is the most valuable skill in this booklet.
+3. **Governance is a design choice, not a compliance afterthought.** The challenge ends with a governance section. Treat it as part of the build, not paperwork.
 
 ## Sponsors and acknowledgements
 
-The Oxford Clinical AI Hackathon 2026 was made possible by the **Oxford University AI Competency Centre** and **OpenAI**, with hosting support from **Jesus College** and **Oxford University Hospitals NHS Foundation Trust**. The tooling used throughout this booklet is OpenAI's GPT-4o-mini, TTS-1, and Fine-tuning API, alongside open models and datasets from HuggingFace.
+The Oxford Clinical AI Hackathon 2026 was made possible by the **Oxford University AI Competency Centre** and **OpenAI**, with hosting support from **Jesus College** and **Oxford University Hospitals NHS Foundation Trust**.
 
-Thanks are due to the ten participating teams, the per-challenge mentors, the Python coaches, the OUH and Oxford clinicians who lent their clinical eye to the curriculum, and the twenty-nine post-event survey respondents whose feedback shaped this edition. The data leakage lesson in Challenge 3 is in this booklet because of you.
+This edition uses OpenAI's GPT-4o-mini for the narrative steps, alongside open models and datasets from HuggingFace. The clinical framing and the pipeline design do not depend on one vendor; the model calls sit in a small number of cells and can be swapped.
+
+Thanks are due to the ten participating teams, the per-challenge mentors, the Python coaches, the OUH and Oxford clinicians who lent their clinical eye to the curriculum, and the post-event survey respondents whose feedback shaped this edition. The data leakage lesson is in this booklet because of you.
+
+## Licence and citation
+
+© 2026 Clinical AI Partners Ltd. This repository carries two sets of terms; the full wording is in [`LICENSE.md`](LICENSE.md).
+
+- **Code is open.** The code cells in the notebooks, and the requirements files, are released under the MIT Licence. Use, adapt and build on them freely.
+- **Teaching text is copyright, all rights reserved.** Treat it as you would an academic paper: read it, learn from it, and quote short passages with a citation. Please ask before republishing, adapting, or teaching from it.
+- **Datasets and models** belong to their own providers and keep their own licences.
+
+To cite this booklet:
+
+> Clinical AI Partners Oxford (2026). *Oxford Clinical AI Hackathon Booklet, Spring 2026 Edition* (v1.0.1). https://github.com/eviemac19/OCAI_Hackathon_Booklet_Spring2026
+
+For permission to reuse the teaching text, write to **events@clinicalaipartners.org**.
 
 ## Feedback and contact
 
-This is the Spring 2026 Edition. We are already planning the next iteration. If you spot an error, find a notebook that won't run, or have a suggestion for a future edition, please write to us at:
+If you spot an error, find a notebook that won't run, or have a suggestion for a future edition, please write to us at:
 
 **events@clinicalaipartners.org**
 
@@ -161,6 +160,6 @@ If the booklet helped you build something — small or otherwise — we'd love t
 
 ## Version
 
-OCAI Hackathon Booklet · Spring 2026 Edition · v1.0
+OCAI Hackathon Booklet · Spring 2026 Edition · v1.0.1
 
 *Building the clinical AI workforce, one team at a time.*
