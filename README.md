@@ -8,7 +8,9 @@ Jupyter notebooks from the Oxford Clinical AI Hackathon that walk you through bu
 
 ## Welcome
 
-This booklet is the after-event compendium of the Oxford Clinical AI Hackathon, held 6–8 April 2026 at the Cheng Kar Shun Digital Hub, Jesus College and the John Radcliffe Hospital, Oxford. Across three days, ten teams of clinicians, researchers, and data scientists built working clinical AI applications and presented them to a panel of judges. Every team delivered a live demo. The post-event survey returned an overall rating of 4.49 out of 5 and a Net Promoter Score of +63.
+This booklet is the post-event compendium of the Oxford Clinical AI Hackathon, held 6–8 April 2026 at the Cheng Kar Shun Digital Hub, Jesus College and the John Radcliffe Hospital, Oxford. Across three days, ten teams of clinicians, researchers, and data scientists built working clinical AI applications and presented them to a panel of judges. Every team delivered a live demo. The post-event survey returned an overall rating of 4.49 out of 5 and a Net Promoter Score of +63.
+
+The event thesis was simple: can you build an AI tool that matches the competency of a Foundation Year 1 (FY1) doctor? Each team took a different aspect of FY1 competency, for example passing a final exam, reading a chest X-ray, or writing a discharge summary.
 
 The notebooks here are the lectures, notebooks, and mentor notes from that event, re-edited so you can work through them at your own pace.
 
@@ -16,12 +18,13 @@ If you were at the event: this is the same material, with the lessons we learned
 
 ## Impact — Spring 2026
 
-![Oxford Clinical AI Hackathon Spring 2026 — impact in one page](assets/impact_one_page_spring2026.png)
+![Oxford Clinical AI Hackathon Spring 2026 — impact in one page](impact_one_page_spring2026.png)
 
 - **66** clinicians, researchers and scientists from four continents, in ten teams
 - **80%** of survey respondents reported a fully functional prototype by Demo Day
 - Self-rated ability to build a clinical AI pipeline rose from **3.59 to 7.17** out of 10
 - Overall rating **4.49 / 5**; Net Promoter Score **+63**
+- Participants moved along a path from AI learner to builder to governance: afterwards **68%** felt confident to act as builders and **54%** to take on governance roles
 
 *Source: post-event survey, completed by 41 of the 66 attendees.*
 
@@ -90,16 +93,16 @@ The most useful learning happens when these groups work together. If you can fin
 
 ## What you'll be able to do by the end
 
-- Prepare a clinical dataset for modelling — including catching the kind of data leakage that produces impressive metrics and dangerous tools.
-- Train, validate, and compare several model families, and choose a decision threshold as a clinical decision rather than a default.
-- Explain an individual prediction with SHAP and LIME, and generate a clinical narrative that is grounded in the model output and held by guardrails.
-- Fine-tune an image classifier on chest X-rays, and detect when an input is not a chest X-ray at all.
-- Write a model card, an acceptable-use statement, and a monitoring plan.
-- Recognise the difference between technical accuracy and clinical safety, and tell which one a vendor is actually showing you.
+- **Low-code:** Prepare a clinical dataset for modelling — including catching the kind of data leakage that produces impressive metrics and dangerous tools.
+- **Low-code:** Train, validate, and compare several model families, and choose a decision threshold as a clinical decision rather than a default.
+- **Low-code:** Explain an individual prediction with SHAP and LIME, and generate a clinical narrative that is grounded in the model output and held by guardrails.
+- **Code:** Fine-tune an image classifier on chest X-rays, and detect when an input is not a chest X-ray at all.
+- **Governance:** Write a model card, an acceptable-use statement, and a monitoring plan.
+- **Governance:** Recognise the difference between technical accuracy and clinical safety, and tell which one a vendor is actually showing you.
 
 ## Recommended order
 
-1. **`00_setup/` first.** Non-negotiable. Everything later depends on a working environment.
+1. **`00_setup/` first.** Non-negotiable. All the notebooks depend on a working environment, and this is worth dwelling over.
 2. **`02_pipelines/` next, in order.** Each notebook saves what the next one loads. Take your time on the feature pipeline notebook in particular — the data leakage example is the single most important lesson in the booklet.
 3. **Challenge 4** once the pipelines make sense. It re-points the same pipeline at an imaging problem.
 4. **Glossary as a reference**, not a chapter. Open it when you hit a term you don't know.

@@ -20,7 +20,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## 2. Teaching text and images — copyright, all rights reserved
 
-**What this covers:** everything that is not code. That includes the text in the markdown cells of the notebooks (explanations, clinical briefs, rubrics, model cards, mentor's notes), the README files, the appendix, the glossary text, and the images in `assets/`.
+**What this covers:** everything that is not code. That includes the text in the markdown cells of the notebooks (explanations, clinical briefs, rubrics, model cards, mentor's notes), the README files, the appendix, the glossary text, and the images.
 
 This material is published so that you can read it and learn from it. You may:
 
