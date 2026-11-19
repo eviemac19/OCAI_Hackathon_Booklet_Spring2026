@@ -8,11 +8,17 @@ A self-contained set of Jupyter notebooks that walks you through building a clin
 
 ## Welcome
 
-This booklet is the post-event compendium of the Oxford Clinical AI Hackathon, held 6–8 April 2026 at the Cheng Kar Shun Digital Hub, Jesus College and the John Radcliffe Hospital, Oxford. Across three days, ten teams of clinicians, researchers, and data scientists built working clinical AI applications and presented them to a panel of judges. Every team delivered a live demo. The post-event survey returned a Net Promoter Score of 76 and an average uplift of 1.3/5 points. 
+This booklet is the post-event compendium of the Oxford Clinical AI Hackathon, held 6–8 April 2026 at the Cheng Kar Shun Digital Hub, Jesus College and the John Radcliffe Hospital, Oxford. Across three days, ten teams of clinicians, researchers, and data scientists built working clinical AI applications and presented them to a panel of judges. 
 
-
-If you were at the event: this is the same material, with the lessons we learned along the way folded in and the rough edges smoothed. If you weren't: welcome — you are in good company. 
-
+The event thesis was simple: Can you build an AI tool match FY1 competency? Each team dealth with different aspects of FY1 competency e.g. pass a final exam, read a CXR, write a discharge summary, etc. 
+https://oerc.ox.ac.uk/ai-centre/ai-centre-events/oxford-clinical-ai-hackathon 
+Academic sponsor: Oxford University AI Competency Centre
+Technical Sponsor: OpenAI
+Outputs: 
+- Every team delivered a live demo, 80% of participants left with a working prototype
+- Learning uplift was 3.59 to 7.17 confidence, Net Promoter Score of 76. 
+- Learning archetypes transitioned from from AI learner to builder to governor.
+  
 ## Who this booklet is for
 
 - **Clinicians** who want to understand clinical AI well enough to evaluate it, build small tools for their own workflow, and contribute meaningfully to governance discussions.
@@ -20,15 +26,13 @@ If you were at the event: this is the same material, with the lessons we learned
 - **NHS and healthcare admin staff** whose frontline perspective makes them, in our experience, some of the most insightful contributors to clinical AI design.
 - **Medical students and early-career clinicians** who want a hands-on grounding in clinical AI before it lands in their daily practice.
 
-The most useful learning happens when these groups work together. If you can find a study partner from a different background, do.
-
 ## What you'll be able to do by the end
 
 - No-code: Customise ChatGPT and build Custom GPTs for clinical workflows, use Retrieval-Augmented Generation to ground AI outputs in trusted clinical references.
 - Low-code: Train, validate, and explain a clinical machine learning model — including catching the kinds of data leakage that produce impressive metrics and dangerous tools.
 - Code tasks: Fine-tune an small language model and integrate text-to-speech for a clinical voice loop.
 - Governance: Recognise the difference between technical accuracy and clinical safety.  Write a model card, an acceptable-use statement, and a monitoring plan that would stand up to NHS AI / MHRA Software as a Medical Device scrutiny
-- 
+  
 
 ## How the booklet is organised — full table of contents
 
@@ -49,7 +53,7 @@ The conceptual half of the booklet. No coding required to read it; small code ce
 
 | Notebook | What it covers | Time |
 | --- | --- | --- |
-| `01_introduction.ipynb` | Why this section, the five-step rhythm, three rules to remember | 20 min |
+| `01_introduction.ipynb` | Orientation,  3 rules to remember | 20 min |
 | `02_what_is_ai.ipynb` | AI / ML / DL distinctions, neural networks, training, overfitting, evaluation | 40 min |
 | `03_clinical_nlp.ipynb` | Language as a clinical signal — tokenisation, NER, summarisation, coding | 40 min |
 | `03_clinical_nlp_demo_discharge_coding.ipynb` | Standalone — worked end-to-end discharge-coding pipeline (read-through) | 20 min |
