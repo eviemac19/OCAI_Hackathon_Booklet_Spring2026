@@ -1,6 +1,6 @@
 # Hello-World Test Notebook — Outline
 
-This is the cell-by-cell plan for `00_hello_world_test.ipynb`. Cowork (or any author) can build the actual `.ipynb` by following this outline literally — each entry below is one notebook cell, in order.
+This is the cell-by-cell plan for `00_hello_world_test.ipynb`. Anyone rebuilding the notebook can follow this outline literally — each entry below is one notebook cell, in order.
 
 The test does five things, in order:
 
@@ -302,7 +302,7 @@ First 3 column names: ['age', 'anaemia', 'creatinine_phosphokinase']
 
 Your environment is ready for the booklet.
 
-**Next step**: open `../01_foundations/` and start with Section 1.
+**Next step**: open `../02_pipelines/` and start with Section 2.
 
 You won't need to run this notebook again unless something about your
 environment changes — a new laptop, a new codespace, an expired API key.
@@ -321,7 +321,7 @@ print(f"OpenAI API:   ✓ working")
 print(f"HuggingFace:  ✓ accessible")
 print(f"Dependencies: ✓ all installed")
 print("=" * 50)
-print("\nReady for Section 1. Have fun.")
+print("\nReady for Section 2. Have fun.")
 ```
 
 **Expected output**: a tidy summary block.

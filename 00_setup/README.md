@@ -276,7 +276,7 @@ The test does five things, in order:
 4. Makes a tiny real call to GPT-4o-mini and prints the response.
 5. Loads a small public HuggingFace dataset and shows its shape.
 
-If all five steps pass, you'll see a clear success message at the bottom and you're ready for Section 1.
+If all five steps pass, you'll see a clear success message at the bottom and you're ready for Section 2.
 
 If any step fails, the test prints a specific message pointing to the most likely fix. The most common issues are:
 
@@ -289,7 +289,7 @@ If any step fails, the test prints a specific message pointing to the most likel
 
 ## You're ready
 
-If the hello-world test passes, you have everything you need. Move on to **Section 1 — Foundations of AI** (`../01_foundations/`).
+If the hello-world test passes, you have everything you need. Move on to **Section 2 — Foundations of AI Pipelines** (`../02_pipelines/`).
 
 You will not need to come back to this section unless your environment changes (new laptop, new Codespace, expired key). Bookmark it just in case.
 
