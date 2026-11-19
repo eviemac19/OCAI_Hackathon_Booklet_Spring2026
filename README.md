@@ -8,11 +8,10 @@ A self-contained set of Jupyter notebooks that walks you through building a clin
 
 ## Welcome
 
-This booklet is the after-event compendium of the Oxford Clinical AI Hackathon, held 6–8 April 2026 at the Cheng Kar Shun Digital Hub, Jesus College and the John Radcliffe Hospital, Oxford. Across three days, ten teams of clinicians, researchers, and data scientists built working clinical AI applications and presented them to a panel of judges. Every team delivered a live demo. The post-event survey returned a Net Promoter Score of 76 with zero detractors.
+This booklet is the post-event compendium of the Oxford Clinical AI Hackathon, held 6–8 April 2026 at the Cheng Kar Shun Digital Hub, Jesus College and the John Radcliffe Hospital, Oxford. Across three days, ten teams of clinicians, researchers, and data scientists built working clinical AI applications and presented them to a panel of judges. Every team delivered a live demo. The post-event survey returned a Net Promoter Score of 76 and an average uplift of 1.3/5 points. 
 
-The booklet you are reading now is the lectures, notebooks, and mentor notes from that event, re-edited so you can work through the curriculum at your own pace.
 
-If you were at the event: this is the same material, with the lessons we learned along the way folded in and the rough edges smoothed. If you weren't: welcome — you are in good company. Most of our live-event participants started with no coding experience. The booklet is built for that.
+If you were at the event: this is the same material, with the lessons we learned along the way folded in and the rough edges smoothed. If you weren't: welcome — you are in good company. 
 
 ## Who this booklet is for
 
@@ -25,12 +24,11 @@ The most useful learning happens when these groups work together. If you can fin
 
 ## What you'll be able to do by the end
 
-- Customise ChatGPT and build Custom GPTs for clinical workflows.
-- Use Retrieval-Augmented Generation to ground AI outputs in trusted clinical references.
-- Train, validate, and explain a clinical machine learning model — including catching the kinds of data leakage that produce impressive metrics and dangerous tools.
-- Fine-tune an OpenAI small language model and integrate text-to-speech for a clinical voice loop.
-- Write a model card, an acceptable-use statement, and a monitoring plan that would stand up to NHS AI / MHRA Software as a Medical Device scrutiny.
-- Recognise the difference between technical accuracy and clinical safety, and tell which one a vendor is actually showing you.
+- No-code: Customise ChatGPT and build Custom GPTs for clinical workflows, use Retrieval-Augmented Generation to ground AI outputs in trusted clinical references.
+- Low-code: Train, validate, and explain a clinical machine learning model — including catching the kinds of data leakage that produce impressive metrics and dangerous tools.
+- Code tasks: Fine-tune an small language model and integrate text-to-speech for a clinical voice loop.
+- Governance: Recognise the difference between technical accuracy and clinical safety.  Write a model card, an acceptable-use statement, and a monitoring plan that would stand up to NHS AI / MHRA Software as a Medical Device scrutiny
+- 
 
 ## How the booklet is organised — full table of contents
 
