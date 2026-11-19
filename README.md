@@ -36,8 +36,6 @@ Outputs:
 
 ## How the booklet is organised — full table of contents
 
-The booklet is 22 notebooks across four numbered sections plus front-matter. Read them in the order below; the *Recommended order* section further down explains where you can skip and where you can't.
-
 ### `00_setup/` — Environment and tools (one-time, ~30–60 minutes)
 
 | File | What it is | Time |
@@ -77,7 +75,14 @@ Concepts become code. Three modular pipeline notebooks using the heart-failure d
 ### `03_challenges/` — Section 3: Five clinical AI MVP challenges (~8–10 hours)
 
 Each challenge is self-contained — clinical brief, dataset, 8–10 numbered Steps, demo-day rubric, model card, mentor's notes. Pick any order; *Challenge 3 is the densest if you only do one*.
+## Recommended order
 
+1. **`00_setup/` first.** Non-negotiable. All the notebooks depends on a working environment, and this is really worth dwelling over. 
+2. **Section 1 — Foundations** 
+3. **Section 2 — Pipelines.** This is where concepts become code. 
+4. **Section 3 — Challenges**, in any order. They are independent.
+5. **Glossary as a reference**
+   
 | Folder / notebook | Clinical question | Time |
 | --- | --- | --- |
 | `challenge_1_final_exam/challenge_1_final_exam.ipynb` | Can your AI pass an FY1 specimen exam? RAG over MedRAG + optional fine-tuning + LIME + guardrails | 90–120 min |
@@ -114,14 +119,6 @@ Each challenge is self-contained — clinical brief, dataset, 8–10 numbered St
 | 3 — Data Analytics | Can your AI predict heart failure mortality and explain why? |
 | 4 — Imaging | Can your AI tell pneumonia from a normal chest X-ray, and tell you when the input isn't a chest X-ray at all? |
 | 5 — Wearables | Can your AI ingest sensor data, convert it to FHIR, and write a clinical snapshot? |
-
-## Recommended order
-
-1. **`00_setup/` first.** Non-negotiable. Everything later depends on a working environment.
-2. **Section 1 — Foundations** next, even if you have a technical background. The clinical framing is the whole point.
-3. **Section 2 — Pipelines.** This is where concepts become code. Take your time on the feature pipeline notebook in particular — the data leakage example here is the single most important lesson in the booklet.
-4. **Section 3 — Challenges**, in any order. They are independent. Challenge 3 is the densest; if you only do one, do that. Challenge 2 is the most fun.
-5. **Glossary as a reference**, not a chapter. Open it when you hit a term you don't know.
 
 ## Time guidance
 
