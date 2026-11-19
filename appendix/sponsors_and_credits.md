@@ -6,7 +6,7 @@ The Oxford Clinical AI Hackathon Spring 2026 — and this booklet that re-edits 
 
 ## Headline sponsor
 
-**OpenAI** — provided the GPT-4o-mini, TTS-1, and OpenAI Fine-tuning API credits the live-event participants used, and addressed the cohort during Demo Day opening remarks. The booklet's tooling is OpenAI throughout; the booklet itself is a sponsor return.
+**OpenAI** — provided the GPT-4o-mini, TTS-1, and OpenAI Fine-tuning API credits the live-event participants used, and addressed the cohort during Demo Day opening remarks. The tooling in this edition is OpenAI's.
 
 ## Academic partner
 
@@ -19,7 +19,7 @@ The Oxford Clinical AI Hackathon Spring 2026 — and this booklet that re-edits 
 
 ## Industry challenge partners
 
-Six named organisations contributed to the live-event challenges. The booklet's vendor-exclusivity rule (master brief §6) means individual partners are not named here in the curriculum body; the contribution is acknowledged collectively. The full sponsor list is in the *OCAH 2026 Impact Report* (CAIP, April 2026, available on request).
+Six organisations contributed to the live-event challenges, and their contribution is acknowledged collectively here. The full sponsor list is in the *OCAH 2026 Impact Report* (CAIP, April 2026, available on request).
 
 ---
 
@@ -33,21 +33,21 @@ The live event ran on the work of:
 
 ## The cohort
 
-**60 working clinicians, doctoral researchers, and clinical scientists from four continents** attended OCAH 2026. *They are the reason this booklet exists.* The Spring 2026 Edition would not have been worth the effort to build without their participation.
+**66 working clinicians, doctoral researchers, and clinical scientists from four continents** attended OCAH 2026. *They are the reason this booklet exists.* The Spring 2026 Edition would not have been worth the effort to build without their participation.
 
 The cohort spanned **10+ clinical specialties** including emergency medicine, biomedical engineering, global health, ENT, general surgery, public health, neuroscience, primary care, paediatrics, and ophthalmology. Geographic reach included the United Kingdom, Kenya, Mexico, India, the USA, and beyond.
 
-## v2.0 contributors — the post-event review
+## Post-event review contributors
 
-**The twenty-nine post-event survey respondents** whose feedback shaped this edition deserve specific thanks. The booklet incorporates their input directly:
+**The post-event survey respondents** whose feedback shaped this edition deserve specific thanks. The booklet incorporates their input directly:
 
 - The data-leakage lesson in Challenge 3 *(the most-cited single learning from the live event)* — folded into Section 1 Chapter 06 and made the central exercise of Section 2 + Challenge 3.
-- The OOD detection lesson in Challenge 4 — promoted from a side-note to the central deployment-time-misalignment teaching moment of §5.2.
-- The Wearables rebuild — Challenge 5 was the lowest-rated track in the survey; the v2.0 rebuild addressed every named issue (broken starter code, unverified dataset, unclear clinical scenario).
-- The "AI as a new clinical team member" framing — named explicitly in v2.0 free-text as the framing readers actually used; preserved as the booklet's spine.
-- The governance-as-design discipline — also named explicitly in v2.0 as the differentiator from other clinical-AI courses.
+- The OOD detection lesson in Challenge 4 — promoted from a side-note to the central deployment-time-misalignment teaching moment of Step 7.
+- The Wearables rebuild — Challenge 5 was the lowest-rated track in the survey; the rebuild addressed every named issue (broken starter code, unverified dataset, unclear clinical scenario).
+- The "AI as a new clinical team member" framing — named explicitly in the survey free-text as the framing participants actually used; preserved as the booklet's spine.
+- The governance-as-design discipline — also named explicitly in the survey as the differentiator from other clinical-AI courses.
 
-Without that feedback, the booklet would have shipped the live event's defects unchanged. The work of writing back is the highest-leverage form of contribution to a curriculum, and the twenty-nine respondents made this version of the work possible.
+Without that feedback, the booklet would have shipped the live event's defects unchanged. The work of writing back is the highest-leverage form of contribution to a curriculum, and the respondents made this version of the work possible.
 
 ---
 

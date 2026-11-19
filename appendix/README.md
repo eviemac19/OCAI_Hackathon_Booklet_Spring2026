@@ -1,6 +1,6 @@
 # Appendix
 
-Reference material for the booklet. Six files; the glossary is the one you'll come back to most often, the others are read-once.
+Reference material for the booklet. Five files; the glossary is the one you'll come back to most often, the others are read-once.
 
 | File | What it is |
 | --- | --- |

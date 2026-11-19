@@ -20,7 +20,7 @@ This list is **not** comprehensive academic coverage. It is the references the b
 
 - ICO definition of AI — [ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/)
 - Allas, T. & Goodman, S. *AI in business: from talk to action.* McKinsey UK, July 2025.
-- Hennessy, R. & Murphy, P. *AI-ENGAGE: a multicentre study of structured AI engagement in higher education.* 2025.
+- Leahy, K., Ozer, E. & Cummins, E. P. *AI-ENGAGE: A Multicentre Intervention to Support Teaching and Learning Engagement with Generative Artificial Intelligence Tools.* Education Sciences, 15(7), 807, 2025. [doi.org/10.3390/educsci15070807](https://doi.org/10.3390/educsci15070807)
 
 ### Chapter 03 — Clinical NLP
 
@@ -113,7 +113,7 @@ The pipeline section uses the heart-failure dataset and citations are consolidat
 - Hildebrand, M. *et al.* *Age group comparability of raw accelerometer output from wrist- and hip-worn monitors.* Medicine & Science in Sports & Exercise, 2014 — the source of the cut-points.
 - HL7 FHIR R4 specification — [hl7.org/fhir/R4](https://www.hl7.org/fhir/R4/).
 - LOINC — [loinc.org](https://loinc.org/) — for activity, sleep, and physical-measurement codes.
-- NHS England. *UK Core FHIR Implementation Guide* — for Wearables Challenge §10.E extension path.
+- NHS England. *UK Core FHIR Implementation Guide* — for the Wearables Challenge extension path.
 - NHS Physical Activity Guidelines — [nhs.uk/live-well/exercise](https://www.nhs.uk/live-well/exercise) — the 150-minutes-MVPA-per-week reference used in the GPT narrative.
 
 ---

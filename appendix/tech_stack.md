@@ -2,7 +2,7 @@
 
 Every library the booklet uses, why it's there, and where to look up the docs when you hit something unfamiliar. Versions are pinned in `requirements.txt` (booklet root and `00_setup/`) — copied here for at-a-glance reference.
 
-The booklet's tooling rule (master brief §6) — **OpenAI sponsor models + free / open HuggingFace ecosystem only**. No other vendor models anywhere in the booklet.
+This edition uses **OpenAI models** (OpenAI sponsored the 2026 event) alongside the **free, open HuggingFace ecosystem**. The pipeline pattern itself does not depend on one vendor: the model calls sit in a small number of cells and can be swapped.
 
 ---
 
@@ -10,7 +10,7 @@ The booklet's tooling rule (master brief §6) — **OpenAI sponsor models + free
 
 | Library | Pinned | What it does | Where it appears | Docs |
 | --- | --- | --- | --- | --- |
-| `openai` | `>=1.40.0,<2.0.0` | Sponsor OpenAI Python SDK — chat completions, fine-tuning, TTS | Section 0 (hello-world); Chapter 05 (LLMs and prompting); every Section 3 challenge | [platform.openai.com/docs](https://platform.openai.com/docs) |
+| `openai` | `>=1.40.0,<2.0.0` | OpenAI Python SDK — chat completions, fine-tuning, TTS | Section 0 (hello-world); Chapter 05 (LLMs and prompting); every Section 3 challenge | [platform.openai.com/docs](https://platform.openai.com/docs) |
 | `huggingface_hub` | `>=0.23.0,<1.0.0` | Authentication and download client for HuggingFace datasets and models | Sections 0, 1, 2, 3 | [huggingface.co/docs/huggingface_hub](https://huggingface.co/docs/huggingface_hub) |
 | `datasets` | `>=2.20.0,<4.0.0` | Loads `mstz/heart_failure`, `MedRAG/textbooks`, `alkzar90/NIH-Chest-X-ray-dataset` | All sections | [huggingface.co/docs/datasets](https://huggingface.co/docs/datasets) |
 | `transformers` | `>=4.42.0,<5.0.0` | Tokenisers + models — used in Chapter 03 demo and Section 1 NLP examples | Chapter 03; Demo 1; Section 1 NLP demos | [huggingface.co/docs/transformers](https://huggingface.co/docs/transformers) |
@@ -44,7 +44,7 @@ The booklet's tooling rule (master brief §6) — **OpenAI sponsor models + free
 | `faiss-cpu` | latest | Challenge 1 | Vector index for RAG over MedRAG/textbooks. Install via `pip install faiss-cpu` if not already present |
 | `sentence-transformers` | latest | Challenge 1 | Provides the `all-MiniLM-L6-v2` embedding model |
 | `langchain-community`, `langchain-core` | latest | Challenge 1 | Document and vector-store abstractions for the RAG pipeline |
-| `actipy` | latest | Challenge 5 | Axivity AX3 `.cwa` file parser. Verify the install command and current API at the time of running — the proposal v2 §11 flagged this as having shifted since the live event |
+| `actipy` | latest | Challenge 5 | Axivity AX3 `.cwa` file parser. Verify the install command and current API at the time of running, as it may have changed since the live event |
 | `scipy` | bundled with sklearn | Chapter 04 | `scipy.ndimage.convolve` for the synthetic Sobel-edge demo |
 | `joblib` | bundled with sklearn | Section 2 | Saves trained models and prepared data between notebooks |
 
@@ -60,14 +60,15 @@ The booklet's tooling rule (master brief §6) — **OpenAI sponsor models + free
 
 The default model throughout is **`gpt-4o-mini`**. It is the cheapest in the GPT-4 family at time of writing and is sufficient for every task in the booklet.
 
-## Indicative cost — completing all five challenges
+## Indicative cost — completing the full booklet
 
 | Item | Approximate cost |
 | --- | --- |
 | All chapters and challenges using GPT-4o-mini | $1–3 |
 | Challenge 2 TTS bonus (a few minutes of speech) | < $0.50 |
 | Challenge 1 fine-tuning (if you flip the gate) | $3–5 |
-| **Total budget recommendation** | **$10–15** as the OpenAI hard limit |
+| **Expected total spend** | **about $5–10** |
+| **Recommended OpenAI hard limit** | **$10–15**, which leaves headroom |
 
 Section 0 walks through setting the limit at platform.openai.com/account/limits before generating any keys.
 
